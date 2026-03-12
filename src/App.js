@@ -379,12 +379,9 @@ export default function Portfolio() {
             
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {projects.map((project, idx) => (
-                <a
+                <div
                   key={idx}
-                  href={project.link}
-                  target={project.link.startsWith('http') ? '_blank' : '_self'}
-                  rel={project.link.startsWith('http') ? 'noopener noreferrer' : ''}
-                  className="group relative bg-gradient-to-br from-white/5 to-white/0 rounded-2xl p-6 border border-white/10 hover:border-white/20 transition-all duration-500 hover:scale-[1.02] backdrop-blur block"
+                  className="group relative bg-gradient-to-br from-white/5 to-white/0 rounded-2xl p-6 border border-white/10 hover:border-white/20 transition-all duration-500 hover:scale-[1.02] backdrop-blur"
                 >
                   <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-10 rounded-2xl transition-all duration-500`}></div>
                   
@@ -393,12 +390,9 @@ export default function Portfolio() {
                       <div className={`p-3 bg-gradient-to-br ${project.gradient} rounded-xl`}>
                         <Code2 size={24} />
                       </div>
-                      <div className="flex items-center gap-2">
-                        <span className="px-3 py-1 bg-white/10 rounded-full text-xs font-semibold">
-                          {project.metrics}
-                        </span>
-                        <ExternalLink className="text-slate-400 group-hover:text-blue-400 transition" size={16} />
-                      </div>
+                      <span className="px-3 py-1 bg-white/10 rounded-full text-xs font-semibold">
+                        {project.metrics}
+                      </span>
                     </div>
                     
                     <h3 className="text-xl sm:text-2xl font-bold mb-2 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-cyan-400 group-hover:bg-clip-text transition-all duration-300">
@@ -415,7 +409,7 @@ export default function Portfolio() {
                       ))}
                     </div>
                   </div>
-                </a>
+                </div>
               ))}
             </div>
           </div>
@@ -461,7 +455,7 @@ export default function Portfolio() {
               Let's Build Something
             </h2>
             <p className="text-xl sm:text-2xl text-slate-400 mb-12 sm:mb-16 px-4">
-              Open to Software Engineer III roles • Starting January 2026
+              Open to Full-stack/AI/ML Engineer roles • Starting January 2026
             </p>
             
             <div className="flex flex-wrap justify-center gap-4 px-4">
