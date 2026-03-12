@@ -35,8 +35,8 @@ export default function Portfolio() {
     {
       title: "CPL Automation Chatbot",
       subtitle: "IBM Watsonx.ai • RAG Pipeline",
-      description: "Intelligent document processing system for Northeastern University helping students determine course waiver eligibility through advanced NLP and context-aware retrieval.",
-      tags: ["AI/ML", "RAG", "Watson", "NLP", "Python"],
+      description: "Intelligent document processing system for Northeastern University with a conversational React UI that helps students determine course waiver eligibility through advanced NLP and context-aware retrieval.",
+      tags: ["AI/ML", "RAG", "Watson", "NLP", "Python", "React"],
       metrics: "Capstone Project",
       gradient: "from-purple-500 to-pink-500",
       link: "https://github.com/yourusername/cpl-chatbot" // Replace with actual link
@@ -44,8 +44,8 @@ export default function Portfolio() {
     {
       title: "Production GenAI System",
       subtitle: "Enterprise Scale • Cloud Native",
-      description: "High-performance GenAI solution serving 10K+ requests daily with 99.9% uptime. Implemented advanced caching, load balancing, and MLOps best practices.",
-      tags: ["GenAI", "Python", "AWS", "Docker", "CI/CD"],
+      description: "High-performance GenAI solution with a modern dashboard frontend serving 10K+ requests daily with 99.9% uptime. Implemented advanced caching, load balancing, and MLOps best practices.",
+      tags: ["GenAI", "Python", "AWS", "Docker", "CI/CD", "Next.js"],
       metrics: "10K+ API Calls/Day",
       gradient: "from-blue-500 to-cyan-500",
       link: "https://github.com/yourusername/genai-system" // Replace with actual link
@@ -53,8 +53,8 @@ export default function Portfolio() {
     {
       title: "Paramount Business Suite",
       subtitle: "LTIMindtree • Enterprise Systems",
-      description: "Tax withholding portals and employee management systems serving thousands of users. Full-stack development with C#, ASP.NET, and enterprise-grade security.",
-      tags: ["C#", "ASP.NET", "SQL", "JavaScript", "Enterprise"],
+      description: "Tax withholding portals and employee management systems serving thousands of users. Built responsive, accessible web UIs on top of full-stack services using C#, ASP.NET, and enterprise-grade security.",
+      tags: ["C#", "ASP.NET", "SQL", "JavaScript", "React", "Enterprise"],
       metrics: "3+ Years Production",
       gradient: "from-orange-500 to-red-500",
       link: "#" // Replace with actual link or portfolio case study
@@ -62,8 +62,8 @@ export default function Portfolio() {
     {
       title: "T-Shirt E-Commerce Platform",
       subtitle: "Full-Stack Web Application",
-      description: "Custom e-commerce solution with shopping cart, payment integration, and inventory management. Built with modern web technologies.",
-      tags: ["React", "Node.js", "MongoDB", "Stripe"],
+      description: "Custom e-commerce solution with a responsive React storefront, shopping cart, payment integration, and inventory management.",
+      tags: ["React", "Node.js", "MongoDB", "Stripe", "Tailwind"],
       metrics: "Live Product",
       gradient: "from-green-500 to-teal-500",
       link: "https://github.com/yourusername/tshirt-store" // Replace with actual link
@@ -80,8 +80,8 @@ export default function Portfolio() {
     {
       title: "Business Analytics Dashboard",
       subtitle: "Tableau • Power BI",
-      description: "Interactive data visualization dashboards for business intelligence, featuring real-time analytics and custom reporting solutions.",
-      tags: ["Tableau", "Power BI", "SQL", "Analytics"],
+      description: "Interactive data visualization dashboards for business intelligence, featuring real-time analytics, drill-down interactions, and custom reporting solutions.",
+      tags: ["Tableau", "Power BI", "SQL", "Analytics", "UX"],
       metrics: "Enterprise BI",
       gradient: "from-indigo-500 to-purple-500",
       link: "#" // Replace with actual link
@@ -94,6 +94,12 @@ export default function Portfolio() {
       items: ["AWS (EC2, S3, Lambda)", "Oracle Cloud", "Docker", "Kubernetes", "CI/CD", "Terraform"], 
       icon: Cloud, 
       color: "from-blue-400 to-blue-600" 
+    },
+    { 
+      name: "Frontend Engineering", 
+      items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Component Design", "Design Systems"], 
+      icon: Sparkles, 
+      color: "from-pink-400 to-rose-600" 
     },
     { 
       name: "AI/ML Engineering", 
@@ -117,25 +123,23 @@ export default function Portfolio() {
 
   const experience = [
     {
-      role: "AI Engineer Intern",
+      role: "AI/Frontend Engineer Intern",
       company: "Aosenuma",
-      period: "2024 - Present",
+      period: "April 2025 - September 2025",
       highlights: [
         "Built GenAI solutions with RAG pipelines serving 10K+ daily requests",
-        "Achieved 99.9% uptime for production AI systems",
-        "Implemented MLOps best practices and automated deployment pipelines",
-        "Optimized model performance reducing latency by 40%"
+        "Designed and developed frontend applications using React and Next.js with Tailwind CSS",
+        "Implemented CI/CD pipelines using GitHub Actions"
       ]
     },
     {
-      role: "Software Engineer I",
+      role: "Full Stack Engineer",
       company: "LTIMindtree (Paramount Pictures)",
-      period: "2021 - 2023",
+      period: "July 2021 - December 2023",
       highlights: [
         "Developed tax withholding and employee management portals",
-        "Built full-stack applications serving thousands of internal users",
-        "Implemented C#, ASP.NET, JavaScript solutions at enterprise scale",
-        "Collaborated with cross-functional teams on critical business systems"
+        "Led UI implementation for complex workflows using React/JavaScript and modern UX patterns",
+        "Built full-stack applications serving thousands of internal users"
       ]
     }
   ];
@@ -143,7 +147,7 @@ export default function Portfolio() {
   const socialLinks = {
     linkedin: "https://www.linkedin.com/in/satyamsingh0101/",
     github: "https://github.com/SatymSingh01",
-    email: "mailto:singh.satya3@northeastern.edu"
+    email: "mailto:singh.satyamnortheastern.edu"
   };
 
   return (
@@ -236,14 +240,14 @@ export default function Portfolio() {
             <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
               <Sparkles className="text-yellow-400" size={20} />
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 via-cyan-400 to-teal-400 bg-clip-text text-transparent">
-                Cloud & AI Engineer
+                Cloud & AI/Frontend Engineer
               </h2>
               <Sparkles className="text-yellow-400" size={20} />
             </div>
             
             <p className="text-base sm:text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-12 leading-relaxed px-4">
-              Building production-scale GenAI solutions • 3+ years experience • MS in Cloud Computing @ Northeastern • 
-              <span className="text-cyan-400"> Oracle Certified</span> • Shipping code that matters
+              Frontend-focused engineer building production-scale GenAI solutions and cloud-native systems • 3+ years experience across React, Next.js, and backend services • MS in Cloud Computing @ Northeastern • 
+              <span className="text-cyan-400"> Oracle Certified</span> • Shipping fast, accessible, and reliable experiences
             </p>
 
             <div className="flex flex-wrap justify-center gap-4 mb-16 px-4">
@@ -286,13 +290,13 @@ export default function Portfolio() {
             <div className="grid md:grid-cols-2 gap-8 sm:gap-12">
               <div className="space-y-6">
                 <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
-                  Currently completing my <span className="text-blue-400 font-semibold">MS in Informatics (Cloud Computing)</span> at Northeastern University, graduating December 2025. I bring <span className="text-cyan-400 font-semibold">3+ years of software engineering experience</span> with a focus on cloud infrastructure and AI solutions.
+                  Currently completing my <span className="text-blue-400 font-semibold">MS in Informatics (Cloud Computing)</span> at Northeastern University, graduating December 2025. I bring <span className="text-cyan-400 font-semibold">3+ years of software engineering experience</span> with a focus on cloud infrastructure, AI solutions, and modern web frontends.
                 </p>
                 <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
-                  As an <span className="text-purple-400 font-semibold">AI Engineer at Aosenuma</span>, I build GenAI solutions with RAG pipelines and production systems serving <span className="text-green-400 font-semibold">10,000+ API requests daily</span> with 99.9% uptime.
+                  As an <span className="text-purple-400 font-semibold">AI/Frontend Engineer at Aosenuma</span>, I build GenAI solutions with RAG pipelines and production systems serving <span className="text-green-400 font-semibold">10,000+ API requests daily</span> with 99.9% uptime, paired with clean, performant React and Next.js interfaces.
                 </p>
                 <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
-                  Previously at <span className="text-orange-400 font-semibold">LTIMindtree</span>, I worked on Paramount Pictures' internal business systems, developing enterprise-scale applications used by thousands of employees globally.
+                  Previously at <span className="text-orange-400 font-semibold">LTIMindtree</span>, I worked on Paramount Pictures' internal business systems, developing enterprise-scale applications used by thousands of employees globally and collaborating closely with designers to deliver intuitive, responsive UIs.
                 </p>
               </div>
               
